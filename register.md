@@ -30,3 +30,10 @@
 ***
 - 2.ResponseCacheImpl.getCacheUpdateTask().new TimerTask.run()，每隔30s，将readWriteCacheMap同步到readOnlyCacheMap
 ![image](./images/register/register14.png)
+### 服务查询
+- 1.ApplicationsResource.getContainers()
+![image](./images/get/get01.png)
+- 2.ResponseCacheImpl.getGZIP()
+![image](./images/get/get02.png)
+- 3.ResponseCacheImpl.getValue()，从缓存中获取数据
+![image](./images/get/get03.png)
