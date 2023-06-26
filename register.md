@@ -30,6 +30,13 @@
 ***
 - 2.ResponseCacheImpl.getCacheUpdateTask().new TimerTask.run()，每隔30s，将readWriteCacheMap同步到readOnlyCacheMap
 ![image](./images/register/register14.png)
+### 服务同步
+- 1.PeerAwareInstanceRegistryImpl.register()
+![image](./images/register/register15.png)
+- 2.PeerAwareInstanceRegistryImpl.replicateToPeers()，服务同步，遍历集群节点
+![image](./images/register/register16.png)
+- 3.PeerAwareInstanceRegistryImpl.replicateInstanceActionsToPeers()
+![image](./images/register/register17.png)
 ### 服务查询
 - 1.ApplicationsResource.getContainers()
 ![image](./images/get/get01.png)
